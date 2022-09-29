@@ -16,80 +16,71 @@ public class Tabeller {
 
 	// b)
 	public static String tilStreng(int[] tabell) {
-		String tekst = "[";
 
-		for (int i = 0; i<tabell.length; i++) {
+	
+		String tekst = "[";	
+		for (int i=0; i<tabell.length; i++) {
 			tekst = tekst + tabell[i];
-			if (i< tabell.length-1) {
+			if (i<tabell.length-1) {
 				tekst = tekst + ",";
 			}
 			
 		}
-		
-		
+			
 		tekst = tekst + "]";
-		
 		return tekst;
+	}
 		
 
 		
+		// TODO
 		//throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
-	}
+
 
 	// c)
 	public static int summer(int[] tabell) {
-		int sumFor = 0;
-		for (int a=0; a<tabell.length; a++) {
-			sumFor = sumFor + tabell[a];
-		}
-		
-		
+
+		//Utvidet for-l�kke
 		int sumUtvid = 0;
 		for (int tall : tabell) {
-			sumUtvid = sumUtvid + tall;
-					
+			sumUtvid = sumUtvid + tall; 
 		}
-		
-		int sumWhile = 0;
-		int b = 0;
-		while (b < tabell.length) {
+		//For-l�kke
+		int sumFor = 0;
+		for (int a=0; a<tabell.length; a++) {
+			sumFor += tabell[a];
+		}
+		 //While-l�kke
+		int sumWhile= 0;
+		int b=0;
+		while (b<tabell.length) {
 			sumWhile = sumWhile + tabell[b];
-			b++;
+			b++;   //Denne m� st� nederst fordi denne sier b+1
 		}
-		return sumWhile; 
+		return sumWhile;
 		
 		//throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-		//bruke en løkke for å søke etter verdien og printe ut
+
+	//bruke ei l�kke istaden for � s�ke ettte verdien og printe ut tabellen
 		
-		boolean tallFinnes = false;
-		int b = 0;
-		while (b < tabell.length && ) {
-			sumWhile = sumWhile + tabell[b];
-			b++;
+		boolean tallFinnes =false;
+		int b=0;
+		while ((b<tabell.length) && !tallFinnes) {
+				if (tall == tabell[b]) {
+					tallFinnes = true; 
+				} 
+			b++; 
 		}
-		return funnet;
-		
-		
-		for (int tall = 0; tall!=tabell; tall++) {
-			if (tall)
-		}
-		
-		int c = 0;
-		boolean tallFinnes;
-		if (c==1 || c==4 || c== 6) {
-			tallFinnes = true;
-		} else {
-			tallFinnes = false;
-		}
-		
 		return tallFinnes;
-		//throw new UnsupportedOperationException("finnesTall ikke implementert");
 	}
+		
+		
+
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
