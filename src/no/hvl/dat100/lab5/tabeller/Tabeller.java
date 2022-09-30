@@ -9,8 +9,6 @@ public class Tabeller {
 			System.out.print(tall + " ");
 		}
 		System.out.println("]");
-		
-		//throw new UnsupportedOperationException("skrivUt ikke implementert");
 
 	}
 
@@ -30,28 +28,21 @@ public class Tabeller {
 		tekst = tekst + "]";
 		return tekst;
 	}
-		
-
-		
-		// TODO
-		//throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
-
-
+	
 	// c)
 	public static int summer(int[] tabell) {
 
-		//Utvidet for-l�kke
+		//Utvidet for-lokke
 		int sumUtvid = 0;
 		for (int tall : tabell) {
 			sumUtvid = sumUtvid + tall; 
 		}
-		//For-l�kke
+		//For-lokke
 		int sumFor = 0;
 		for (int a=0; a<tabell.length; a++) {
 			sumFor += tabell[a];
 		}
-		 //While-l�kke
+		 //While-lokke
 		int sumWhile= 0;
 		int b=0;
 		while (b<tabell.length) {
@@ -60,16 +51,13 @@ public class Tabeller {
 		}
 		return sumWhile;
 		
-		//throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-	//bruke ei l�kke istaden for � s�ke ettte verdien og printe ut tabellen
 		
 		boolean tallFinnes =false;
-		int b=0;
+		int b = 0;
 		while ((b<tabell.length) && !tallFinnes) {
 				if (tall == tabell[b]) {
 					tallFinnes = true; 
@@ -79,15 +67,15 @@ public class Tabeller {
 		return tallFinnes;
 	}
 		
-		
 
-
-	// e)
-	public static int posisjonTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
-
+	// e) Bodil
+	public static int posisjonTall(int[] tabell, int tall) { 
+		for (int c=0; c<tabell.length; c++) {
+			if (tabell[c]==tall) {
+				return c;
+			}
+		}
+		return -1;
 	}
 
 	// f)
@@ -98,11 +86,16 @@ public class Tabeller {
 		
 	}
 
-	// g)
+	// g) Bodil
 	public static boolean erSortert(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("erSortert ikke implementert");
+		
+		for (int d=0; d<tabell.length-1; d++) {
+			if (tabell[d] > tabell[d+1]) {
+				return false;
+			}
+		}
+		return true;
+		//throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
 	// h)
