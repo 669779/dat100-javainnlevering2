@@ -13,11 +13,11 @@ public class Matriser {
 	public static String tilStreng(int[][] matrise) {
 
 		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		// throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
 
-	// c)
+	// c) 
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
 		// TODO
