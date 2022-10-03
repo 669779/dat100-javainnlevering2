@@ -4,8 +4,13 @@ public class Matriser {
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
-		//martin
-		
+		//Lager en metode som skriver ut en matrise
+		for (int[] rad: matrise) {
+			for(int element: rad) { 
+				System.out.print(element + "\t");
+			}
+				System.out.println();
+		}
 		
 
 	}
@@ -25,11 +30,30 @@ public class Matriser {
 
 	// c) 
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
 	
-	}
+//	for (int [] rad: matrise) {
+//		for(int element: rad) {
+//			System.out.print(element*tall + "\t");
+//		}
+//		
+//		}
+		
+	
+		int ant_rad = matrise.length;
+		int ant_ele = matrise[0].length;
+		
+		int [][] nymatrise = new int [ant_rad] [ant_ele];
+		
+		
+ 	for (int i = 0; i < matrise.length; i++) {
+ 		
+ 		for (int [] ) {
+ 			
+ 	}
+	
+ 		
+ 		
+ 		
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
