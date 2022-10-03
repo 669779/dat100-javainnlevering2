@@ -3,6 +3,7 @@ package no.hvl.dat100.lab6.matriser;
 public class Matriser {
 
 	// a)
+	//lagt inn kun for pushmessige årsaker
 	public static void skrivUt(int[][] matrise) {
 		//Lager en metode som skriver ut en matrise
 		for (int[] rad: matrise) {
