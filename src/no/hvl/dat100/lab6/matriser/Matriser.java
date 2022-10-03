@@ -6,26 +6,15 @@ public class Matriser {
 	public static void skrivUt(int[][] matrise) {
 		//martin
 		
-		int rad = 2;
-		int kolonne = 3;
-		String [][] matrix = new String [rad][kolonne];
 		
-		System.out.println("hei");
-		
-		
-		{
-				
-				
-		}
+
 	}
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
 		// TODO
-
-		 throw new UnsupportedOperationException("tilStreng ikke implementert");
-
+		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
 	}
 
