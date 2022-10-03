@@ -3,6 +3,7 @@ package no.hvl.dat100.lab6.matriser;
 public class Matriser {
 
 	// a)
+	//lagt inn kun for pushmessige årsaker
 	public static void skrivUt(int[][] matrise) {
 		//Lager en metode som skriver ut en matrise
 		for (int[] rad: matrise) {
@@ -15,12 +16,17 @@ public class Matriser {
 
 	}
 
-	// b)
+	// b) 
 	public static String tilStreng(int[][] matrise) {
-
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		String utTxt="";
+		for (int i=0; i<matrise.length; i++) {
+			for (int j=0; j<matrise[i].length; j++) {
+				utTxt = utTxt + matrise[i][j] + " ";
+				
+			}
+			utTxt += "\n";	
+		}
+		return utTxt;	
 	}
 
 	// c) 
@@ -48,17 +54,34 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		
+		boolean matriseLik = false;
+		for (int i=0; i<a.length; i++) {
+			for (int j=0; j< b[i].length; j++) {
+		
+		if (a.equals(b)) {
+			matriseLik = true;
+		}
+		}
+		}
+		
+		return matriseLik;
 	}
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO
+	    //int txt;
+		//for (int i=0; i<matrise.length; i++) {
+			//for (int j=0; j<i; j++) {
+				//int h = matrise[i][j];
+				//matrise[i][j] = matrise[j][i];
+				//matrise[j][i] = h;
+				//txt += h;
+			//}
+		//}
+		//return txt;
 		throw new UnsupportedOperationException("speile ikke implementert");
-	
 	}
 
 	// f)
