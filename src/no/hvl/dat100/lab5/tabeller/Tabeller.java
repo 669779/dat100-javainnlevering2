@@ -47,7 +47,7 @@ public class Tabeller {
 		int b=0;
 		while (b<tabell.length) {
 			sumWhile = sumWhile + tabell[b];
-			b++;   //Denne m� st� nederst fordi denne sier b+1
+			b++;   
 		}
 		return sumWhile;
 		
@@ -90,7 +90,6 @@ public class Tabeller {
 			reverser--;
 		}
 		return reverserTabell;
-		//throw new UnsupportedOperationException("reverser ikke implementert");
 		
 	}
 
@@ -103,7 +102,6 @@ public class Tabeller {
 			}
 		}
 		return true;
-		//throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
 	// h)
@@ -119,6 +117,5 @@ public class Tabeller {
 			nyTabell[tabell1.length + e]=tabell2[e]; 
 		}
 		return nyTabell;
-		//throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
 }

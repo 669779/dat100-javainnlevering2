@@ -20,9 +20,18 @@ public class Matriser {
 	// b)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-
-		 throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String utTxt=""; //new String[][];
+		for (int i=0; i<matrise.length; i++) {
+			//System.out.println();
+			for (int j=0; j<matrise[i].length; j++) {
+				utTxt = utTxt + matrise[i][j] + " ";
+				//System.out.print(matrise[i][j] + " ");
+				
+			}
+			utTxt += "\n";	
+		}
+		return utTxt;
+		
 
 		
 	}
@@ -45,7 +54,12 @@ public class Matriser {
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO
+		String txt = " ";
+		for (int i=0; i<matrise.length; i++) {
+			for (int j=0; j<i; j++) {
+				int b = matrise[i] [j];
+			}
+		}
 		throw new UnsupportedOperationException("speile ikke implementert");
 	
 	}
