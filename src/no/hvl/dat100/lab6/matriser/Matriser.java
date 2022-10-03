@@ -4,12 +4,14 @@ public class Matriser {
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
+		//martin
 		
 		int rad = 2;
 		int kolonne = 3;
 		String [][] matrix = new String [rad][kolonne];
 		
 		System.out.println("hei");
+		
 		
 		{
 				
