@@ -93,8 +93,15 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+		int [] reverserTabell = new int[tabell.length];
+		
+		int reverser = tabell.length -1;
+		for(int c = 0; c < tabell.length; c++) {
+			reverserTabell[c] = tabell[reverser];
+			reverser--;
+		}
+		return reverserTabell;
+		//throw new UnsupportedOperationException("reverser ikke implementert");
 		
 	}
 
@@ -108,7 +115,16 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int nyLengde = tabell1.length + tabell2.length;
+		int [] nyTabell = new int [nyLengde];
+		
+		for(int d = 0; d < tabell1.length; d++) {
+			nyTabell[d]=tabell1[d];
+		}
+		for (int e = 0; e < tabell2.length; e++) {
+			nyTabell[tabell1.length + e]=tabell2[e]; 
+		}
+		return nyTabell;
+		//throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
 }
