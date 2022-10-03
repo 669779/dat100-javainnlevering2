@@ -21,7 +21,9 @@ public class Matriser {
 	public static String tilStreng(int[][] matrise) {
 
 		// TODO
+
 		 throw new UnsupportedOperationException("tilStreng ikke implementert");
+
 		
 	}
 

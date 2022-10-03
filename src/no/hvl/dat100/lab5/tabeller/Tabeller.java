@@ -9,8 +9,6 @@ public class Tabeller {
 			System.out.print(tall + " ");
 		}
 		System.out.println("]");
-		
-		//throw new UnsupportedOperationException("skrivUt ikke implementert");
 
 	}
 
@@ -30,28 +28,21 @@ public class Tabeller {
 		tekst = tekst + "]";
 		return tekst;
 	}
-		
-
-		
-		// TODO
-		//throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
-
-
+	
 	// c)
 	public static int summer(int[] tabell) {
 
-		//Utvidet for-l�kke
+		//Utvidet for-lokke
 		int sumUtvid = 0;
 		for (int tall : tabell) {
 			sumUtvid = sumUtvid + tall; 
 		}
-		//For-l�kke
+		//For-lokke
 		int sumFor = 0;
 		for (int a=0; a<tabell.length; a++) {
 			sumFor += tabell[a];
 		}
-		 //While-l�kke
+		 //While-lokke
 		int sumWhile= 0;
 		int b=0;
 		while (b<tabell.length) {
@@ -60,16 +51,13 @@ public class Tabeller {
 		}
 		return sumWhile;
 		
-		//throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-	//bruke ei l�kke istaden for � s�ke ettte verdien og printe ut tabellen
 		
 		boolean tallFinnes =false;
-		int b=0;
+		int b = 0;
 		while ((b<tabell.length) && !tallFinnes) {
 				if (tall == tabell[b]) {
 					tallFinnes = true; 
@@ -79,36 +67,58 @@ public class Tabeller {
 		return tallFinnes;
 	}
 		
-		
 
 
-	// e)
-	public static int posisjonTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
-
+	// e) Bodil
+	public static int posisjonTall(int[] tabell, int tall) { 
+		for (int c=0; c<tabell.length; c++) {
+			if (tabell[c]==tall) {
+				return c;
+			}
+		}
+		return -1;
 	}
 
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+		int [] reverserTabell = new int[tabell.length];
+		
+		int reverser = tabell.length -1;
+		for(int c = 0; c < tabell.length; c++) {
+			reverserTabell[c] = tabell[reverser];
+			reverser--;
+		}
+		return reverserTabell;
+		//throw new UnsupportedOperationException("reverser ikke implementert");
 		
 	}
 
-	// g)
+	// g) Bodil
 	public static boolean erSortert(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("erSortert ikke implementert");
+		
+		for (int d=0; d<tabell.length-1; d++) {
+			if (tabell[d] > tabell[d+1]) {
+				return false;
+			}
+		}
+		return true;
+		//throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int nyLengde = tabell1.length + tabell2.length;
+		int [] nyTabell = new int [nyLengde];
+		
+		for(int d = 0; d < tabell1.length; d++) {
+			nyTabell[d]=tabell1[d];
+		}
+		for (int e = 0; e < tabell2.length; e++) {
+			nyTabell[tabell1.length + e]=tabell2[e]; 
+		}
+		return nyTabell;
+		//throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
 }
