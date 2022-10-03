@@ -17,7 +17,7 @@ public class Matriser {
 		}
 	}
 
-	// b)
+	// b) 
 	public static String tilStreng(int[][] matrise) {
 
 		String utTxt=""; //new String[][];
@@ -46,21 +46,33 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		
+		boolean matriseLik = false;
+		for (int i=0; i<a.length; i++) {
+			for (int j=0; j< b[i].length; j++) {
+		
+		if (a.equals(b)) {
+			matriseLik = true;
+		}
+		}
+		}
+		
+		return matriseLik;
 	}
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		String txt = " ";
+		int txt;
 		for (int i=0; i<matrise.length; i++) {
 			for (int j=0; j<i; j++) {
-				int b = matrise[i] [j];
+				int h = matrise[i][j];
+				matrise[i][j] = matrise[j][i];
+				matrise[j][i] = h;
+				txt += h;
 			}
 		}
-		throw new UnsupportedOperationException("speile ikke implementert");
+		return txt;
 	
 	}
 
