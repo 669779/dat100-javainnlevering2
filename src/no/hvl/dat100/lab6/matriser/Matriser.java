@@ -25,27 +25,23 @@ public class Matriser {
 
 	// c) 
 	public static int[][] skaler(int tall, int[][] matrise) {
-	
-//	for (int [] rad: matrise) {
-//		for(int element: rad) {
-//			System.out.print(element*tall + "\t");
-//		}
-//		
-//		}
+		// Lager en ny matrise på samme størrelse som den originale
 		
-	
 		int ant_rad = matrise.length;
 		int ant_ele = matrise[0].length;
 		
 		int [][] nymatrise = new int [ant_rad] [ant_ele];
 		
-		
+		// Lager en løkke som finner posisjenen til hvert element i den originale matrisen
  	for (int i = 0; i < matrise.length; i++) {
+ 		for (int j = 0; j < matrise[i].length; j++) { 			
+ 			int a = matrise [i][j] * tall; 		// Multipliserer tallet i posisjonen med parameteren tall
+ 			nymatrise[i][j] = a; 				//legger til i den nye matrisen
+ 		}
+ 		}
+ 		return nymatrise;
  		
- 		for (int [] ) {
- 			
  	}
-	
  		
  		
  		
