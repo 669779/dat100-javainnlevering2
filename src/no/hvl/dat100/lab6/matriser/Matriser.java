@@ -17,7 +17,7 @@ public class Matriser {
 		
 	}
 
-	// c)
+	// c) 
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
 		// TODO
